@@ -1,0 +1,26 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class ColaEspera {
+
+   public static void main(String[] args) {
+      Queue<String> cola = new LinkedList<>();
+
+      // agregar elementos a la cola
+      cola.add("elemento1");
+      cola.add("elemento2");
+      cola.add("elemento3");
+
+      // examinar el primer elemento de la cola
+      String primerElemento = cola.peek();
+      System.out.println("El primer elemento de la cola es: " + primerElemento);
+
+      // eliminar el primer elemento de la cola
+      String elementoEliminado = cola.poll();
+      System.out.println("El elemento eliminado de la cola es: " + elementoEliminado);
+
+      // examinar el primer elemento de la cola después de la eliminación
+      primerElemento = cola.peek();
+      System.out.println("El nuevo primer elemento de la cola es: " + primerElemento);
+   }
+}
